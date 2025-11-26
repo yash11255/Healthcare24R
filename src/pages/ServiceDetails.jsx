@@ -37,7 +37,7 @@ const ServiceDetails = () => {
             <SectionHeading
               eyebrow="What to expect"
               title="A dedicated pod built around your needs."
-              description="From intake to recovery, you’ll have a dedicated navigator plus access to all Health24 support services."
+              description="From intake to recovery, you’ll have a dedicated navigator plus access to all HealthCare24Hr support services."
             />
             <ul className="mt-6 space-y-4 text-slate-600">
               {service.features.map((feature) => (

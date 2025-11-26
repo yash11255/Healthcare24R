@@ -6,7 +6,7 @@ const Blog = () => (
     <div className="mx-auto max-w-6xl px-4">
       <SectionHeading
         eyebrow="Insights"
-        title="Guides written by Health24 clinicians."
+        title="Guides written by HealthCare24Hr clinicians."
         description="Proactive tips, research-backed explainers, and new care models from our providers."
         align="center"
       />

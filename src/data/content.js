@@ -41,7 +41,7 @@ export const serviceLines = [
     icon: "/assets/images/service/09.svg",
     slug: "caregiver",
     longDescription:
-      "Hire skilled and trusted caregivers from Health24 to provide the best home healthcare for your loved ones. All our caregivers are 100% court and criminal verified.",
+      "Hire skilled and trusted caregivers from HealthCare24Hr to provide the best home healthcare for your loved ones. All our caregivers are 100% court and criminal verified.",
     features: [
       "Oral hygiene and bed bath/sponge bath",
       "Feeding and bathroom assistance",
@@ -135,7 +135,7 @@ export const stats = [
   {
     label: "Happy Families",
     value: "50K+",
-    detail: "Families trust Health24 for compassionate and professional home healthcare.",
+    detail: "Families trust HealthCare24Hr for compassionate and professional home healthcare.",
   },
   {
     label: "Cities Covered",
@@ -167,7 +167,7 @@ export const careTimeline = [
     decade: "2014",
     title: "Foundation",
     description:
-      "Started Health24 to revolutionize home healthcare in Mumbai with verified caregivers.",
+      "Started HealthCare24Hr to revolutionize home healthcare in Mumbai with verified caregivers.",
   },
   {
     decade: "2017",
@@ -224,9 +224,9 @@ export const specialties = [
 
 export const faqs = [
   {
-    question: "How can I verify the caregiver is from Health24?",
+    question: "How can I verify the caregiver is from HealthCare24Hr?",
     answer:
-      "All Health24 caregivers carry official ID cards and wear uniforms. You can also verify their details through our support team at 08069048802.",
+      "All HealthCare24Hr caregivers carry official ID cards and wear uniforms. You can also verify their details through our support team at 08069048802.",
   },
   {
     question: "How quickly can I get a caregiver?",
@@ -329,7 +329,7 @@ export const doctors = [
 export const testimonials = [
   {
     quote:
-      "The caregiver from Health24 has been a blessing for our family. My mother receives excellent care with compassion and dignity.",
+      "The caregiver from HealthCare24Hr has been a blessing for our family. My mother receives excellent care with compassion and dignity.",
     patient: "Meera Patel",
     role: "Daughter of Elderly Patient",
   },
@@ -341,7 +341,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Health24's physiotherapist helped my husband regain mobility after stroke. The personalized care plan made all the difference.",
+      "HealthCare24Hr's physiotherapist helped my husband regain mobility after stroke. The personalized care plan made all the difference.",
     patient: "Sunita Sharma",
     role: "Caregiver Family",
   },

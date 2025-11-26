@@ -5,7 +5,7 @@ import SectionHeading from "./SectionHeading.jsx";
 const servicesData = {
   caregiver: {
     title: "Hire our Verified Caregivers",
-    description: "Hire skilled and trusted caregivers from Health24 to provide best home healthcare for your loved ones.",
+    description: "Hire skilled and trusted caregivers from HealthCare24Hr to provide best home healthcare for your loved ones.",
     features: [
       "Oral hygiene and bed bath/sponge bath",
       "Cleanliness of patients room",
@@ -29,7 +29,7 @@ const servicesData = {
   },
   physiotherapy: {
     title: "Book our Experienced Physiotherapists",
-    description: "Get special treatment just for you and heal faster at home with Health24's trusted & experienced physiotherapy services.",
+    description: "Get special treatment just for you and heal faster at home with HealthCare24Hr's trusted & experienced physiotherapy services.",
     features: [
       "Therapy for general injuries",
       "Treatment of frequent body pains",
@@ -41,7 +41,7 @@ const servicesData = {
   },
   babyCare: {
     title: "Experienced Baby Sitter and Nanny",
-    description: "Health24 has caring and experienced baby sitters who are experts in taking care of Baby.",
+    description: "HealthCare24Hr has caring and experienced baby sitters who are experts in taking care of Baby.",
     features: [
       "Bathing and dressing",
       "Children's laundry",

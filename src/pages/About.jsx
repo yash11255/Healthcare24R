@@ -15,7 +15,7 @@ const AboutPage = () => (
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeading
           eyebrow="Operating principles"
-          title="Three rules keep Health24 radically patient-first."
+          title="Three rules keep HealthCare24Hr radically patient-first."
         />
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {coreValues.map((value) => (

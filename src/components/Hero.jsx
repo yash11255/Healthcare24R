@@ -30,7 +30,7 @@ const Hero = () => (
           Healthcare at Home, Right When You Need It
         </h1>
         <p className="text-lg text-slate-600">
-          Health24 brings expert caregivers, nurses, and medical services directly to your doorstep. Professional care with compassion and dignity.
+          HealthCare24Hr brings expert caregivers, nurses, and medical services directly to your doorstep. Professional care with compassion and dignity.
         </p>
         <div className="flex flex-wrap gap-3">
           {tags.map((tag) => (
@@ -64,7 +64,7 @@ const Hero = () => (
         transition={{ duration: 0.8 }}
       >
         <div className="relative mx-auto flex max-w-md items-end">
-          <img src="/assets/images/banner/01.png" alt="Caregiver" className="w-full drop-shadow-2xl" />
+          <img src="public/image-removebg-preview (19).png" alt="Caregiver" className="w-full drop-shadow-2xl" />
           {["Elderly Care", "Nursing", "Physiotherapy"].map((label, index) => (
             <div
               key={label}

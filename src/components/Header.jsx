@@ -45,7 +45,7 @@ const Header = () => {
       </div>
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-4">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/logo.png" alt="Health24 logo" className="h-12 w-auto" />
+          <img src="/logo.png" alt="HealthCare24Hr logo" className="h-12 w-auto" />
         </Link>
         <nav className="ml-auto hidden items-center gap-2 md:flex">
           {navLinks.map((link) => (

@@ -8,7 +8,7 @@ const About = () => (
     <div className="mx-auto grid max-w-6xl gap-10 px-4 lg:grid-cols-2 lg:items-center">
       <div className="space-y-6">
         <SectionHeading
-          eyebrow="About Health24"
+          eyebrow="About HealthCare24Hr"
           title="India's most trusted home healthcare service provider."
           description="We connect you with verified caregivers, professional nurses, and expert physiotherapists who deliver compassionate care in the comfort of your home. Every caregiver is thoroughly screened and trained to provide world-class healthcare services."
         />

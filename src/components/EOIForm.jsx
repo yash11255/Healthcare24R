@@ -85,7 +85,7 @@ const EOIForm = ({ presetTopic }) => {
             <textarea
               rows={4}
               className="mt-2 w-full rounded-2xl border border-white/20 bg-transparent px-4 py-3 text-white placeholder:text-white/60 focus:border-primary focus:outline-none"
-              placeholder="Describe your current initiatives, timeline, and the outcome you expect from Health24..."
+              placeholder="Describe your current initiatives, timeline, and the outcome you expect from HealthCare24Hr..."
             />
           </label>
           <button
