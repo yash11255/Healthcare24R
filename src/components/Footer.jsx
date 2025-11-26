@@ -4,10 +4,9 @@ const Footer = () => (
   <footer className="bg-slate-950 text-white">
     <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 sm:grid-cols-2 lg:grid-cols-4">
       <div>
-        <img src="/assets/images/logo/logo.svg" alt="Mediweb" className="h-10" />
+        <img src="/logo.png" alt="Health24" className="h-16" />
         <p className="mt-4 text-sm text-white/70">
-          Mediweb delivers seamless healthcare journeys powered by coordinated teams and
-          digital convenience.
+          Health24 brings professional caregivers, nurses, and healthcare services to your home with compassion and excellence.
         </p>
       </div>
       <div>
@@ -17,7 +16,7 @@ const Footer = () => (
         <ul className="mt-4 space-y-2 text-sm text-white/60">
           {[
             { label: "Services", to: "/services" },
-            { label: "Doctors", to: "/doctors" },
+            { label: "Caregivers", to: "/doctors" },
             { label: "Testimonials", to: "/about" },
             { label: "Blog", to: "/blog" },
           ].map((item) => (
@@ -34,9 +33,9 @@ const Footer = () => (
           Contact
         </h4>
         <ul className="mt-4 space-y-2 text-sm text-white/70">
-          <li>1-800-100-900</li>
-          <li>hello@mediweb.care</li>
-          <li>2702 Memory Lane, Chicago</li>
+          <li>+91 080-6904-8802</li>
+          <li>support@health24.co.in</li>
+          <li>Mumbai | Delhi | Bangalore</li>
         </ul>
       </div>
       <div>
@@ -44,7 +43,7 @@ const Footer = () => (
           Newsletter
         </h4>
         <p className="mt-4 text-sm text-white/70">
-          Healthy tips and clinic updates delivered monthly.
+          Healthcare tips and service updates delivered monthly.
         </p>
         <form className="mt-4 space-y-3">
           <input
@@ -62,7 +61,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="border-t border-white/10 py-6 text-center text-xs text-white/50">
-      © {new Date().getFullYear()} Mediweb. All rights reserved.
+      © {new Date().getFullYear()} Health24. All rights reserved.
     </div>
   </footer>
 );

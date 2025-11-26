@@ -37,7 +37,7 @@ const ServiceDetails = () => {
             <SectionHeading
               eyebrow="What to expect"
               title="A dedicated pod built around your needs."
-              description="From intake to recovery, you’ll have a dedicated navigator plus access to all Mediweb support services."
+              description="From intake to recovery, you’ll have a dedicated navigator plus access to all Health24 support services."
             />
             <ul className="mt-6 space-y-4 text-slate-600">
               {service.features.map((feature) => (
@@ -81,7 +81,7 @@ const ServiceDetails = () => {
                     className="flex items-center justify-between rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-secondary transition hover:-translate-y-0.5 hover:text-primary"
                   >
                     {item.title}
-                    <i className="fa-solid fa-arrow-up-right" />
+                    <i className="fas fa-arrow-right" />
                   </Link>
                 ))}
               </div>

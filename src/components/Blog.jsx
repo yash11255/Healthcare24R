@@ -6,7 +6,7 @@ const Blog = () => (
     <div className="mx-auto max-w-6xl px-4">
       <SectionHeading
         eyebrow="Insights"
-        title="Guides written by Mediweb clinicians."
+        title="Guides written by Health24 clinicians."
         description="Proactive tips, research-backed explainers, and new care models from our providers."
         align="center"
       />
@@ -28,7 +28,7 @@ const Blog = () => (
                 className="mt-auto inline-flex items-center gap-2 pt-4 text-sm font-semibold text-primary"
               >
                 Read more
-                <i className="fa-regular fa-arrow-up-right" />
+                <i className="fas fa-arrow-right" />
               </a>
             </div>
           </article>

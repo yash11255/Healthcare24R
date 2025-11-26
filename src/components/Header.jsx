@@ -16,18 +16,18 @@ const Header = () => {
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-wrap items-center gap-4">
             <span className="inline-flex items-center gap-2">
-              <i className="fa-sharp fa-regular fa-location-dot text-primary" />
-              2702 Memory Lane, Chicago
+              <i className="fas fa-map-marker-alt text-primary" />
+              Mumbai | Delhi | Bangalore
             </span>
             <span className="inline-flex items-center gap-2">
-              <i className="fa-light fa-clock text-primary" />
-              Mon - Fri · 08:00 - 20:00
+              <i className="fas fa-clock text-primary" />
+              Available 24/7
             </span>
           </div>
           <div className="flex flex-wrap items-center gap-4">
-            <a className="inline-flex items-center gap-2" href="tel:+1800100900">
-              <i className="fa-regular fa-phone text-primary" />
-              Emergency · 1-800-100-900
+            <a className="inline-flex items-center gap-2" href="tel:+918069048802">
+              <i className="fas fa-phone text-primary" />
+              Call Us · +91 080-6904-8802
             </a>
             <div className="flex items-center gap-2 text-white">
               {["facebook-f", "linkedin-in", "youtube", "twitter"].map((icon) => (
@@ -45,8 +45,7 @@ const Header = () => {
       </div>
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-4">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/assets/images/logo/logo.svg" alt="Mediweb logo" className="h-10 w-auto" />
-          <span className="font-heading text-xl font-semibold text-secondary">Mediweb</span>
+          <img src="/logo.png" alt="Health24 logo" className="h-12 w-auto" />
         </Link>
         <nav className="ml-auto hidden items-center gap-2 md:flex">
           {navLinks.map((link) => (
@@ -59,7 +58,7 @@ const Header = () => {
           to="/appointment"
           className="hidden rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition hover:-translate-y-0.5 md:inline-flex"
         >
-          Appointment
+          Book Service
         </Link>
         <button
           type="button"
@@ -67,7 +66,7 @@ const Header = () => {
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
-          <i className="fa-regular fa-bars text-lg" />
+          <i className="fas fa-bars text-lg" />
         </button>
       </div>
       {menuOpen && (

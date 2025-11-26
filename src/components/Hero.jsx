@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const heroStats = [
-  { label: "Years of care", value: "25+" },
-  { label: "Specialists", value: "120" },
-  { label: "Avg. response", value: "<2h" },
+  { label: "Years of care", value: "10+" },
+  { label: "Caregivers", value: "2000+" },
+  { label: "Cities", value: "10+" },
 ];
 
-const tags = ["Hybrid visits", "Precision labs", "Care navigators"];
+const tags = ["Verified Caregivers", "24/7 Support", "Transparent Pricing"];
 const MotionDiv = motion.div;
 
 const Hero = () => (
@@ -25,13 +24,13 @@ const Hero = () => (
       >
         <p className="inline-flex items-center gap-3 rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary shadow-sm">
           <img src="/assets/images/banner/icon/08.svg" alt="" className="h-6 w-6" />
-          Reimagined healthcare
+          India's Most Trusted Home Healthcare
         </p>
         <h1 className="font-heading text-4xl font-semibold text-secondary sm:text-5xl">
-          Clinics, technology, and humans working as one.
+          Healthcare at Home, Right When You Need It
         </h1>
         <p className="text-lg text-slate-600">
-          Mediweb blends in-person brilliance with digital convenience—rapid triage, proactive follow-ups, and personalized recovery pods.
+          Health24 brings expert caregivers, nurses, and medical services directly to your doorstep. Professional care with compassion and dignity.
         </p>
         <div className="flex flex-wrap gap-3">
           {tags.map((tag) => (
@@ -40,25 +39,14 @@ const Hero = () => (
             </span>
           ))}
         </div>
-        <div className="grid gap-4 sm:grid-cols-3">
-          <select className="rounded-2xl border border-slate-200 px-4 py-3 text-sm text-secondary focus:border-primary focus:outline-none">
-            <option>Select Department</option>
-            <option>Cardiology</option>
-            <option>Neurology</option>
-            <option>Women's Health</option>
-          </select>
-          <select className="rounded-2xl border border-slate-200 px-4 py-3 text-sm text-secondary focus:border-primary focus:outline-none">
-            <option>Select Doctor</option>
-            <option>Dr. Melinda Chavez</option>
-            <option>Dr. Jakira Gold</option>
-            <option>Dr. Anika Patel</option>
-          </select>
-          <Link
-            to="/doctors"
-            className="grid place-items-center rounded-2xl bg-primary text-sm font-semibold text-white shadow-lg shadow-primary/40 transition hover:-translate-y-0.5"
+        <div>
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white shadow-lg shadow-primary/40 transition hover:-translate-y-0.5"
           >
-            Find Doctors
-          </Link>
+            Request a Callback
+            <i className="fas fa-arrow-right" />
+          </a>
         </div>
         <div className="flex flex-wrap gap-6">
           {heroStats.map((stat) => (
@@ -76,8 +64,8 @@ const Hero = () => (
         transition={{ duration: 0.8 }}
       >
         <div className="relative mx-auto flex max-w-md items-end">
-          <img src="/assets/images/banner/01.png" alt="Doctor" className="w-full drop-shadow-2xl" />
-          {["Cardiology", "Neurology", "Orthopedics"].map((label, index) => (
+          <img src="/assets/images/banner/01.png" alt="Caregiver" className="w-full drop-shadow-2xl" />
+          {["Elderly Care", "Nursing", "Physiotherapy"].map((label, index) => (
             <div
               key={label}
               className={`absolute rounded-2xl bg-white/90 px-4 py-3 text-sm shadow-xl backdrop-blur ${
@@ -89,7 +77,7 @@ const Hero = () => (
               }`}
             >
               <div className="font-semibold text-secondary">{label}</div>
-              <p className="text-xs text-slate-500">Specialist care</p>
+              <p className="text-xs text-slate-500">Professional care</p>
             </div>
           ))}
         </div>
@@ -107,4 +95,3 @@ const Hero = () => (
 );
 
 export default Hero;
-

@@ -7,7 +7,7 @@ const BlogPage = () => (
     <PageHero
       eyebrow="Insights"
       title="Clinical perspectives, proactive ideas."
-      description="Articles from Mediweb physicians, researchers, and care navigators."
+      description="Articles from Health24 physicians, researchers, and care navigators."
     />
     <section className="bg-white py-16 lg:py-24">
       <div className="mx-auto max-w-6xl px-4">
@@ -34,7 +34,7 @@ const BlogPage = () => (
                   className="mt-auto inline-flex items-center gap-2 pt-4 text-sm font-semibold text-primary"
                 >
                   Continue reading
-                  <i className="fa-regular fa-arrow-up-right" />
+                  <i className="fas fa-arrow-right" />
                 </button>
               </div>
             </article>

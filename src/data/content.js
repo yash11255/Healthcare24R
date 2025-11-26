@@ -2,120 +2,120 @@ export const navLinks = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
-  { label: "Doctors", to: "/doctors" },
+  // { label: "Doctors", to: "/doctors" },
   { label: "Blog", to: "/blog" },
   { label: "Contact", to: "/contact" },
 ];
 
 export const quickActions = [
   {
-    label: "Request Appointment",
+    label: "Book Caregiver",
     icon: "/assets/images/service/01.svg",
     to: "/appointment",
-    pill: "15 clinics",
+    pill: "2000+ caregivers",
   },
   {
-    label: "Find Doctors",
+    label: "Nursing Services",
     icon: "/assets/images/service/02.svg",
     to: "/doctors",
-    pill: "120+ experts",
+    pill: "Certified nurses",
   },
   {
     label: "Emergency Call",
     icon: "/assets/images/service/03.svg",
-    to: "tel:+1800100900",
-    pill: "24/7 triage",
+    to: "tel:+918069048802",
+    pill: "24/7 support",
   },
   {
-    label: "Digital Support",
+    label: "Physiotherapy",
     icon: "/assets/images/service/04.svg",
     to: "/contact",
-    pill: "Virtual visits",
+    pill: "At home",
   },
 ];
 
 export const serviceLines = [
   {
-    title: "Cardiology",
-    description: "Advanced cardiac care with minimally invasive options.",
+    title: "Caregiver Services",
+    description: "Trained and verified caregivers for elderly and patient care.",
     icon: "/assets/images/service/09.svg",
-    slug: "cardiology",
+    slug: "caregiver",
     longDescription:
-      "From preventive screenings to life-saving structural heart procedures, our cardiology pod pairs renowned specialists with intelligent monitoring tech.",
+      "Hire skilled and trusted caregivers from Health24 to provide the best home healthcare for your loved ones. All our caregivers are 100% court and criminal verified.",
     features: [
-      "Hybrid cath labs with live 3D imaging",
-      "Remote monitoring wearables with AI alerts",
-      "Dedicated recovery lounge with cardiac rehab coaches",
+      "Oral hygiene and bed bath/sponge bath",
+      "Feeding and bathroom assistance",
+      "Light massage and patient room cleanliness",
     ],
     image: "/assets/images/banner/14.webp",
   },
   {
-    title: "Neurology",
-    description: "Comprehensive diagnostics for complex neurological issues.",
+    title: "Nursing Services",
+    description: "Professional nursing care at the comfort of your home.",
     icon: "/assets/images/service/10.svg",
-    slug: "neurology",
+    slug: "nursing",
     longDescription:
-      "Neurologists, neurosurgeons, and therapists co-design treatment plans for stroke, epilepsy, and neurodegenerative conditions.",
+      "Certified nurses providing comprehensive medical care at home including medication management, wound care, and post-operative care.",
     features: [
-      "Immersive VR neuro-therapy suites",
-      "Advanced imaging and microsurgery",
-      "Cognitive coaching and family education",
+      "IV therapy and injection administration",
+      "Wound dressing and catheter care",
+      "Vital signs monitoring and health assessment",
     ],
     image: "/assets/images/banner/15.webp",
   },
   {
-    title: "Mental Health",
-    description: "Whole-person support from licensed therapists and psychiatrists.",
+    title: "Elderly Care",
+    description: "Compassionate care for senior citizens with dignity and respect.",
     icon: "/assets/images/service/12.svg",
-    slug: "mental-health",
+    slug: "elderly-care",
     longDescription:
-      "Personalized therapy, psychiatry, and community support programs to help you navigate stress, burnout, and long-term mental wellness.",
+      "Specialized elderly care services providing companionship, assistance with daily activities, and monitoring of health conditions for senior citizens.",
     features: [
-      "Integrated therapy + medication management",
-      "Digital CBT and mindfulness curriculum",
-      "24/7 urgent support line",
+      "Companionship and emotional support",
+      "Medication reminders and health monitoring",
+      "Assistance with mobility and daily activities",
     ],
     image: "/assets/images/banner/13.webp",
   },
   {
-    title: "Orthopedics",
-    description: "Joint preservation, sports medicine, and rehabilitation.",
+    title: "Physiotherapy",
+    description: "Expert physiotherapy and rehabilitation services at home.",
     icon: "/assets/images/service/14.svg",
-    slug: "orthopedics",
+    slug: "physiotherapy",
     longDescription:
-      "Sports medicine physicians, surgeons, and rehab specialists collaborate within our Motion Lab to restore movement quickly and safely.",
+      "Professional physiotherapists providing personalized rehabilitation programs for faster recovery from injuries, surgeries, and chronic conditions.",
     features: [
-      "Biomechanics lab with gait analysis",
-      "Robotic-assisted joint surgery",
-      "Performance-focused rehab pods",
+      "Post-surgery rehabilitation programs",
+      "Pain management and mobility improvement",
+      "Customized exercise and therapy plans",
     ],
     image: "/assets/images/banner/16.webp",
   },
   {
-    title: "Radiology",
-    description: "High-resolution imaging with rapid turnaround times.",
+    title: "Doctor at Home",
+    description: "Qualified doctors visit your home for consultation and treatment.",
     icon: "/assets/images/service/27.svg",
-    slug: "radiology",
+    slug: "doctor-at-home",
     longDescription:
-      "Imaging technologists and radiologists deliver crystal-clear answers with the fastest reporting window in the region.",
+      "Get expert medical consultation from qualified doctors in the comfort of your home. Complete diagnosis, treatment, and prescription services.",
     features: [
-      "Low-dose CT, MRI, and PET capabilities",
-      "Same-day results with clinician consult",
-      "Integrated image sharing with your care team",
+      "General physician consultations",
+      "Diagnostic services at home",
+      "Prescription and treatment plans",
     ],
     image: "/assets/images/banner/17.webp",
   },
   {
-    title: "Cancer Care",
-    description: "Personalized treatment plans backed by leading research.",
+    title: "Attendant Services",
+    description: "Patient attendants for hospital and home care support.",
     icon: "/assets/images/service/26.svg",
-    slug: "cancer-care",
+    slug: "attendant",
     longDescription:
-      "From diagnosis to survivorship, our oncology program centralizes chemo, radiation, and clinical trial access in a calming environment.",
+      "Dedicated patient attendants providing round-the-clock support for hospitalized patients and home care, ensuring comfort and assistance.",
     features: [
-      "Molecular tumor boards and precision protocols",
-      "On-site infusion spa suites",
-      "Family support, nutrition, and mental health services",
+      "24/7 patient monitoring and assistance",
+      "Hospital and home care support",
+      "Personal hygiene and comfort care",
     ],
     image: "/assets/images/banner/18.webp",
   },
@@ -124,248 +124,248 @@ export const serviceLines = [
 export const stats = [
   {
     label: "Years Experience",
-    value: "25+",
-    detail: "Integrating research-backed medicine with hospitality-grade service since 2010.",
+    value: "10+",
+    detail: "Providing trusted home healthcare services across major cities since 2014.",
   },
   {
-    label: "Specialist Doctors",
-    value: "120+",
-    detail: "Board-certified clinicians collaborating across cardiology, neuro, oncology, and more.",
+    label: "Verified Caregivers",
+    value: "2000+",
+    detail: "Court and criminal verified caregivers, nurses, and attendants ready to serve.",
   },
   {
-    label: "Patients Cared For",
-    value: "2.4M",
-    detail: "Personalized care plans, remote monitoring, and recovery coaching worldwide.",
+    label: "Happy Families",
+    value: "50K+",
+    detail: "Families trust Health24 for compassionate and professional home healthcare.",
   },
   {
-    label: "Locations",
-    value: "18",
-    detail: "Connected campuses with unified records and same-day diagnostics.",
+    label: "Cities Covered",
+    value: "10+",
+    detail: "Serving Mumbai, Delhi, Bangalore, and other major cities across India.",
   },
 ];
 
 export const coreValues = [
   {
-    title: "Whole-person medicine",
+    title: "Professional & Compassionate Caregivers",
     description:
-      "Behavioral health, nutrition, and social work teams partner with every clinician.",
+      "100% court and criminal verified caregivers, certified to handle medical conditions and medically trained by our professionals.",
   },
   {
-    title: "Precision diagnostics",
+    title: "Convenient & Personalized Services",
     description:
-      "Same-day imaging, labs, and AI-assisted insight keep care plans moving quickly.",
+      "365 days dedicated care manager with customized 8hr/12hr/24hr care plans. Choose from 2000+ caregiver profiles.",
   },
   {
-    title: "Always-on access",
+    title: "Transparent Pricing",
     description:
-      "Virtual visits, remote monitoring, and 24/7 chat for reassurance between visits.",
+      "No hidden costs with competitively priced world-class healthcare services. Refund on unsatisfactory service.",
   },
 ];
 
 export const careTimeline = [
   {
-    decade: "2010",
-    title: "Clinic roots",
+    decade: "2014",
+    title: "Foundation",
     description:
-      "Opened the first Mediweb campus serving South Chicago with 20 clinicians.",
+      "Started Health24 to revolutionize home healthcare in Mumbai with verified caregivers.",
   },
   {
-    decade: "2015",
+    decade: "2017",
     title: "Network expansion",
     description:
-      "Launched telehealth, urgent care pods, and a multi-state clinician network.",
+      "Expanded to Delhi-NCR and Bangalore, building India's largest caregiver network.",
   },
   {
     decade: "2020",
-    title: "Digital hospital",
+    title: "Digital transformation",
     description:
-      "Introduced remote monitoring, patient apps, and research-backed care pathways.",
+      "Launched online booking platform and 24/7 support system for seamless care.",
   },
   {
     decade: "2025",
-    title: "Global partnerships",
+    title: "Pan-India presence",
     description:
-      "Partnering with innovators to bring advanced therapies to every campus.",
+      "Serving 10+ cities with 2000+ caregivers, setting new standards in home healthcare.",
   },
 ];
 
 export const servicePackages = [
   {
-    name: "Preventive Plus",
-    price: "$149",
-    description: "Annual labs, lifestyle coaching, and smart health tracking.",
-    items: ["Same-day visits", "Dedicated care guide", "Custom actionable plan"],
+    name: "8 Hour Care",
+    price: "₹1,200/day",
+    description: "Part-time caregiver support for daily assistance and monitoring.",
+    items: ["Verified caregiver", "Daily health monitoring", "Personal care assistance"],
   },
   {
-    name: "Chronic Care Pro",
-    price: "$289",
-    description: "Coordinated support for long-term conditions with specialists.",
-    items: ["Quarterly specialist review", "Medication sync", "Remote monitoring kit"],
+    name: "12 Hour Care",
+    price: "₹1,800/day",
+    description: "Extended care support for patients needing more attention.",
+    items: ["Dedicated caregiver", "Medication management", "Meal assistance"],
   },
   {
-    name: "Surgical Journey",
-    price: "$489",
-    description: "End-to-end prep, stay, and recovery concierge services.",
-    items: ["Personal navigator", "Virtual PT sessions", "Family support briefings"],
+    name: "24 Hour Care",
+    price: "₹2,500/day",
+    description: "Round-the-clock professional care for critical patients.",
+    items: ["24/7 dedicated caregiver", "Complete personal care", "Emergency support"],
   },
 ];
 
 export const specialties = [
-  "Cardiology",
-  "Neurology",
-  "Orthopedics",
-  "Women's Health",
-  "Mental Health",
-  "Oncology",
-  "Radiology",
-  "Pediatrics",
-  "Primary Care",
+  "Elderly Care",
+  "Post-Operative Care",
+  "Chronic Disease Care",
+  "Dementia Care",
+  "Stroke Recovery",
+  "Cancer Care",
+  "Diabetes Management",
+  "Palliative Care",
+  "Baby Care",
 ];
 
 export const faqs = [
   {
-    question: "Do you accept my insurance?",
+    question: "How can I verify the caregiver is from Health24?",
     answer:
-      "Mediweb partners with most major plans plus tailored self-pay bundles. Our coordinators verify coverage in under 24 hours.",
+      "All Health24 caregivers carry official ID cards and wear uniforms. You can also verify their details through our support team at 08069048802.",
   },
   {
-    question: "How quickly can I see a specialist?",
+    question: "How quickly can I get a caregiver?",
     answer:
-      "Urgent cases are matched same day. Standard referrals are scheduled within 3 business days with virtual options if you prefer.",
+      "We can arrange a verified caregiver within 24 hours of your request. For urgent cases, we try to provide same-day service based on availability.",
   },
   {
-    question: "Can I move my records to Mediweb?",
+    question: "Can I get a replacement caregiver if needed?",
     answer:
-      "Yes. Sign a single consent form and we import your history, imaging, and prescriptions securely in 48 hours.",
+      "Yes. If you're not satisfied with the caregiver or need a replacement for any reason, contact your dedicated care manager and we'll arrange a replacement immediately.",
   },
 ];
 
 export const locations = [
-  { city: "Chicago", address: "2702 Memory Lane, Chicago, IL 60605" },
-  { city: "Austin", address: "1200 Barton Springs Rd, Austin, TX 78704" },
-  { city: "Seattle", address: "88 Pike Street, Seattle, WA 98101" },
+  { city: "Mumbai", address: "Andheri West, Mumbai, Maharashtra 400053" },
+  { city: "Delhi", address: "Connaught Place, New Delhi, Delhi 110001" },
+  { city: "Bangalore", address: "Koramangala, Bangalore, Karnataka 560034" },
 ];
 
 export const departments = [
   {
-    title: "Precision Cardiology",
-    copy: "Hybrid cath labs wired to remote monitoring wearables and AI triage.",
-    tags: ["Wearables", "AI Reports"],
+    title: "Caregiver Services",
+    copy: "Verified and trained caregivers for elderly and patient care at home.",
+    tags: ["Verified", "Trained"],
   },
   {
-    title: "Neuro Recovery Studio",
-    copy: "Immersive VR therapy combined with minimally invasive neurosurgery.",
-    tags: ["VR Rehab", "Microsurgery"],
+    title: "Nursing Care",
+    copy: "Professional nurses for medical care, wound dressing, and health monitoring.",
+    tags: ["Certified", "Medical Care"],
   },
   {
-    title: "Women's Health Collective",
-    copy: "Doula-backed maternity, fertility, and preventive gynecology teams.",
-    tags: ["Holistic", "Fertility"],
+    title: "Physiotherapy",
+    copy: "Expert physiotherapists providing rehabilitation and pain management at home.",
+    tags: ["Rehabilitation", "Recovery"],
   },
   {
-    title: "Motion Lab",
-    copy: "Sports medicine, rehab robotics, and orthopedic surgery under one roof.",
-    tags: ["Robotics", "Sports Lab"],
+    title: "Doctor at Home",
+    copy: "Qualified doctors for consultation, diagnosis, and treatment at your doorstep.",
+    tags: ["Consultation", "Treatment"],
   },
 ];
 
 export const packages = [
   {
-    label: "Essential Preventive",
-    price: "$249",
-    description: "Annual physical, lab panels, and lifestyle roadmap.",
-    perks: ["Next-day visits", "Virtual coach", "Curated labs"],
+    label: "Basic Care",
+    price: "₹1,200/day",
+    description: "8-hour caregiver service for daily assistance and support.",
+    perks: ["Verified caregiver", "Daily monitoring", "Personal care"],
   },
   {
-    label: "Elite Care",
-    price: "$699",
-    description: "Same-day multispecialty access with concierge diagnostics.",
-    perks: ["Priority imaging", "Care navigator", "Unlimited messaging"],
+    label: "Premium Care",
+    price: "₹2,500/day",
+    description: "24-hour dedicated caregiver with complete care support.",
+    perks: ["24/7 caregiver", "Medical assistance", "Emergency support"],
     featured: true,
   },
   {
-    label: "Corporate Wellness",
+    label: "Nursing Care",
     price: "Custom",
-    description: "On-site clinics, wellbeing programming, and analytics.",
-    perks: ["Population data", "Employee portal", "Dedicated liaison"],
+    description: "Professional nursing services with medical care at home.",
+    perks: ["Certified nurse", "Medical procedures", "Health monitoring"],
   },
 ];
 
 export const doctors = [
   {
-    name: "Dr. Melinda Chavez",
-    title: "Cardiologist",
+    name: "Priya Sharma",
+    title: "Senior Caregiver",
     photo: "/assets/images/team/01.jpg",
-    focus: "Structural cardiology",
-    tenure: "15 yrs",
-    bio: "Leads minimally invasive valve therapies, mentoring teams across three campuses.",
+    focus: "Elderly care specialist",
+    tenure: "8 yrs",
+    bio: "Certified caregiver specializing in elderly care with expertise in dementia and Alzheimer's patient care.",
   },
   {
-    name: "Dr. Jakira Gold",
-    title: "Orthopedics",
+    name: "Rajesh Kumar",
+    title: "Registered Nurse",
     photo: "/assets/images/team/02.jpg",
-    focus: "Sports medicine",
+    focus: "Post-operative care",
     tenure: "12 yrs",
-    bio: "Partners with the Motion Lab to rebuild mobility with robotics and precision rehab.",
+    bio: "Experienced RN providing comprehensive post-surgical care and medical support at home.",
   },
   {
-    name: "Dr. Anika Patel",
-    title: "Neurologist",
+    name: "Anita Desai",
+    title: "Physiotherapist",
     photo: "/assets/images/team/03.jpg",
-    focus: "Neuro recovery",
+    focus: "Rehabilitation",
     tenure: "10 yrs",
-    bio: "Combines microsurgery with immersive neuro-therapy for faster cognitive recovery.",
+    bio: "Certified physiotherapist specializing in stroke recovery and mobility rehabilitation programs.",
   },
   {
-    name: "Dr. Andrew Wayne",
-    title: "Family Physician",
+    name: "Vikram Singh",
+    title: "Patient Attendant",
     photo: "/assets/images/team/04.jpg",
-    focus: "Preventive care",
-    tenure: "18 yrs",
-    bio: "Designs whole-family care plans with nutritionists, therapists, and remote monitoring.",
+    focus: "Critical care support",
+    tenure: "6 yrs",
+    bio: "Dedicated attendant with extensive experience in critical patient care and hospital support services.",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "The entire Mediweb team treated me like family. From diagnosis to recovery, every step felt coordinated and compassionate.",
-    patient: "Roxanna Mills",
-    role: "Cancer Survivor",
+      "The caregiver from Health24 has been a blessing for our family. My mother receives excellent care with compassion and dignity.",
+    patient: "Meera Patel",
+    role: "Daughter of Elderly Patient",
   },
   {
     quote:
-      "I booked a virtual visit and had answers the same day. It's refreshing to see technology and bedside manner work together.",
-    patient: "Ethan Price",
-    role: "Telehealth Patient",
+      "Professional nursing care at home made my father's recovery so much easier. The nurse was skilled, caring, and always available.",
+    patient: "Rahul Mehta",
+    role: "Family Member",
   },
   {
     quote:
-      "Their preventive care program helped me build sustainable habits. I feel better than I have in years.",
-    patient: "Caroline James",
-    role: "Wellness Member",
+      "Health24's physiotherapist helped my husband regain mobility after stroke. The personalized care plan made all the difference.",
+    patient: "Sunita Sharma",
+    role: "Caregiver Family",
   },
 ];
 
 export const blogPosts = [
   {
-    title: "How To Prepare For Your Annual Checkup",
+    title: "Choosing The Right Caregiver For Your Loved Ones",
     excerpt:
-      "Simple steps to get the most out of your appointment and help clinicians spot issues early.",
+      "Essential tips for selecting a qualified and compassionate caregiver for elderly family members.",
     image: "/assets/images/testimonials/01.jpg",
     date: "Nov 02, 2025",
   },
   {
-    title: "Why Heart Health Starts In The Kitchen",
+    title: "Home Care vs Hospital Care: Making The Right Choice",
     excerpt:
-      "Cardiologists explain the Mediterranean-inspired habits they recommend to every patient.",
+      "Understanding when home healthcare is the best option for patient recovery and comfort.",
     image: "/assets/images/testimonials/02.png",
     date: "Oct 24, 2025",
   },
   {
-    title: "The Future Of Hybrid Care",
+    title: "Importance of Professional Nursing Care at Home",
     excerpt:
-      "In-person expertise meets seamless virtual follow-ups for a better recovery experience.",
+      "How professional nursing services at home can improve patient outcomes and family peace of mind.",
     image: "/assets/images/testimonials/03.png",
     date: "Oct 05, 2025",
   },

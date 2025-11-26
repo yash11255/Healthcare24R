@@ -95,7 +95,7 @@ const Doctors = () => {
               <p className="mt-2 text-sm text-slate-600">{doctor.bio}</p>
               <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary">
                 Book with {doctor.name.split(" ")[1]}
-                <i className="fa-solid fa-arrow-up-right" />
+                <i className="fas fa-arrow-right" />
               </div>
             </article>
           ))}
