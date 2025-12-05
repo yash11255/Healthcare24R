@@ -352,21 +352,21 @@ export const blogPosts = [
     title: "Choosing The Right Caregiver For Your Loved Ones",
     excerpt:
       "Essential tips for selecting a qualified and compassionate caregiver for elderly family members.",
-    image: "/assets/images/testimonials/01.jpg",
+    image: "https://buddymobilitycare.com/wp-content/uploads/2024/08/caretaker-for-patients.webp",
     date: "Nov 02, 2025",
   },
   {
     title: "Home Care vs Hospital Care: Making The Right Choice",
     excerpt:
       "Understanding when home healthcare is the best option for patient recovery and comfort.",
-    image: "/assets/images/testimonials/02.png",
-    date: "Oct 24, 2025",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGKSrYmw6P04p0nmMczrWr7IgHwU5N_22Jaw&s",
+    date: "Nov 24, 2025",
   },
   {
     title: "Importance of Professional Nursing Care at Home",
     excerpt:
       "How professional nursing services at home can improve patient outcomes and family peace of mind.",
-    image: "/assets/images/testimonials/03.png",
-    date: "Oct 05, 2025",
+    image: "https://t3.ftcdn.net/jpg/06/54/76/72/360_F_654767269_0vuB5aBBF8eOGygOaBkAiD6mcplSbKlV.jpg",
+    date: "Dec 05, 2025",
   },
 ];

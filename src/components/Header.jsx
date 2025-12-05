@@ -11,7 +11,7 @@ const Header = () => {
     }`;
 
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-100 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-slate-100 bg-white">
       <div className="bg-secondary text-white text-xs sm:text-sm">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-wrap items-center gap-4">
@@ -43,10 +43,12 @@ const Header = () => {
           </div>
         </div>
       </div>
+
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-4">
         <Link to="/" className="flex items-center gap-3">
           <img src="/Screenshot 2025-12-04 at 11.50.25 PM.png" alt="HealthCare24Hr logo" className="h-12 w-auto" />
         </Link>
+
         <nav className="ml-auto hidden items-center gap-2 md:flex">
           {navLinks.map((link) => (
             <NavLink key={link.label} to={link.to} className={linkClasses} end={link.to === "/"} onClick={() => setMenuOpen(false)}>
@@ -54,12 +56,14 @@ const Header = () => {
             </NavLink>
           ))}
         </nav>
+
         <Link
           to="/appointment"
           className="hidden rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition hover:-translate-y-0.5 md:inline-flex"
         >
           Book Service
         </Link>
+
         <button
           type="button"
           className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-secondary md:hidden"
@@ -69,6 +73,7 @@ const Header = () => {
           <i className="fas fa-bars text-lg" />
         </button>
       </div>
+
       {menuOpen && (
         <div className="border-t border-slate-100 bg-white px-4 py-4 md:hidden">
           <div className="flex flex-col gap-2">
@@ -92,4 +97,3 @@ const Header = () => {
 };
 
 export default Header;
-
