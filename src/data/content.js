@@ -1,10 +1,10 @@
 export const navLinks = [
   { label: "Home", to: "/" },
-  { label: "About", to: "/about" },
-  { label: "Services", to: "/services" },
-  // { label: "Doctors", to: "/doctors" },
-  { label: "Blog", to: "/blog" },
-  { label: "Contact", to: "/contact" },
+  { label: "About", to: "/" },
+  { label: "Services", to: "/" },
+  // { label: "Doctors", to: "/" },
+  { label: "Blog", to: "/" },
+  { label: "Contact", to: "/" },
 ];
 
 export const quickActions = [
@@ -12,7 +12,7 @@ export const quickActions = [
     label: "Book Caregiver",
     icon: "/assets/images/service/01.svg",
     to: "/appointment",
-    pill: "2000+ caregivers",
+    pill: "Verified caregivers",
   },
   {
     label: "Nursing Services",

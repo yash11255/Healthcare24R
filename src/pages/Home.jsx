@@ -13,14 +13,7 @@ const Home = () => (
   <main>
     <Hero />
     <QuickActions />
-    <About />
-    <Services />
-    <Stats />
-    {/* <Doctors /> */}
-    <Testimonials />
-    <Blog />
-    {/* <EOIForm /> */}
-    <Contact />
+ 
   </main>
 );
 

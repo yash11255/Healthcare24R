@@ -27,7 +27,7 @@ const Header = () => {
           <div className="flex flex-wrap items-center gap-4">
             <a className="inline-flex items-center gap-2" href="tel:+918069048802">
               <i className="fas fa-phone text-primary" />
-              Call Us · +91 080-6904-8802
+              
             </a>
             <div className="flex items-center gap-2 text-white">
               {["facebook-f", "linkedin-in", "youtube", "twitter"].map((icon) => (
@@ -58,7 +58,7 @@ const Header = () => {
         </nav>
 
         <Link
-          to="/appointment"
+          to="#"
           className="hidden rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition hover:-translate-y-0.5 md:inline-flex"
         >
           Book Service

@@ -15,10 +15,10 @@ const Footer = () => (
         </h4>
         <ul className="mt-4 space-y-2 text-sm text-white/60">
           {[
-            { label: "Services", to: "/services" },
-            { label: "Caregivers", to: "/doctors" },
-            { label: "Testimonials", to: "/about" },
-            { label: "Blog", to: "/blog" },
+            { label: "Services", to: "/" },
+            { label: "Caregivers", to: "/" },
+            { label: "Testimonials", to: "/" },
+            { label: "Blog", to: "/" },
           ].map((item) => (
             <li key={item.label}>
               <Link to={item.to} className="hover:text-white">

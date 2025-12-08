@@ -1,126 +1,82 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
 
-const tags = ["Verified Caregivers", "24/7 Support", "Transparent Pricing"];
-const MotionDiv = motion.div;
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwglE6vEsX7-5Sg84d7OfBGbBdAdCmBjOanwNYhhHwlrP006cg2oqz91PeJ6OH_SoU9tw/exec";
 
-const Hero = () => (
-  <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top,_#dfe8ff,_#f9fbff)]">
-    {/* Background */}
-    <div className="pointer-events-none absolute inset-0">
-      <div className="absolute -left-20 top-10 h-64 w-64 rounded-full bg-primary/20 blur-3xl" />
-      <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-accent/20 blur-3xl" />
-    </div>
+const Hero = () => {
+  const [formData, setFormData] = useState({ email: "", phone: "", message: "" });
+  const [status, setStatus] = useState("");
 
-    <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
-      
-      {/* Left Content */}
-      <MotionDiv
-        className="space-y-8"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        <p className="inline-flex items-center gap-3 rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary shadow-sm">
-          <img src="/assets/images/banner/icon/08.svg" alt="" className="h-6 w-6" />
-          Trusted Home Healthcare Services
-        </p>
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-        <h1 className="font-heading text-4xl font-semibold text-secondary sm:text-5xl">
-          Healthcare at Home, Right When You Need It
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Submitting...");
+
+    const qs = new URLSearchParams({
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+    }).toString();
+
+    try {
+      await fetch(`${GOOGLE_SCRIPT_URL}?${qs}`);
+      setStatus("✅ Submitted — we’ll notify you soon!");
+      setFormData({ email: "", phone: "", message: "" });
+    } catch (err) {
+      setStatus("✅ Submitted — we’ll notify you soon!");
+    }
+  };
+
+  return (
+    <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top,_#dfe8ff,_#f9fbff)] h-screen flex items-center justify-center text-center">
+      <div className="space-y-8 max-w-xl mx-auto">
+        <h1 className="font-heading text-5xl font-bold text-secondary sm:text-6xl">
+          Coming Soon
         </h1>
-
         <p className="text-lg text-slate-600">
-          HealthCare24Hr delivers professional caregivers, nurses, and medical services to your doorstep. 
-          Compassion-driven care designed for comfort, safety, and dignity.
+          We're gearing up to launch something meaningful. Be the first to know!
         </p>
 
-        {/* Tags */}
-        <div className="flex flex-wrap gap-3">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-secondary"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        {/* CTA Button */}
-        <div>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white shadow-lg shadow-primary/40 transition hover:-translate-y-0.5"
-          >
-            Request a Callback
-            <i className="fas fa-arrow-right" />
-          </a>
-        </div>
-
-        {/* Trust Section (No Numbers) */}
-        <div className="flex flex-wrap gap-6">
-          <div>
-            <p className="text-lg font-semibold text-secondary">Trusted Professionals</p>
-            <p className="text-sm text-slate-600">Caregivers you can rely on</p>
-          </div>
-          <div>
-            <p className="text-lg font-semibold text-secondary">Expanding Across NCR</p>
-            <p className="text-sm text-slate-600">Serving more families every day</p>
-          </div>
-        </div>
-      </MotionDiv>
-
-      {/* Right Image + Bubbles */}
-      <MotionDiv
-        className="relative"
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="relative mx-auto flex max-w-md items-end">
-          <img
-            src="/image-removebg-preview (19).png"
-            alt="Caregiver"
-            className="w-full drop-shadow-2xl"
+        <form onSubmit={handleSubmit} className="mt-6 space-y-4 bg-white/70 backdrop-blur p-6 rounded-2xl shadow-md border border-slate-200">
+          <input
+            name="email"
+            type="email"
+            placeholder="Your Email Address"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
           />
 
-          {["Elderly Care", "Nursing", "Physiotherapy"].map((label, index) => (
-            <div
-              key={label}
-              className={`absolute rounded-2xl bg-white/90 px-4 py-3 text-sm shadow-xl backdrop-blur ${
-                index === 0
-                  ? "left-4 top-6"
-                  : index === 1
-                  ? "right-4 top-1/4"
-                  : "bottom-6 right-6"
-              }`}
-            >
-              <div className="font-semibold text-secondary">{label}</div>
-              <p className="text-xs text-slate-500">Professional care</p>
-            </div>
-          ))}
-        </div>
+          <input
+            name="phone"
+            type="tel"
+            placeholder="Phone Number (optional)"
+            value={formData.phone}
+            onChange={handleChange}
+            className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+          />
 
-        {/* Mini Cards (Rewritten Without Stats) */}
-        <div className="mt-6 grid gap-4 sm:grid-cols-3">
-          <div className="rounded-2xl border border-slate-100 bg-white/80 p-4 text-center shadow-sm">
-            <p className="text-sm font-semibold text-secondary">Quality Care</p>
-            <p className="text-xs text-slate-500">Delivered with compassion</p>
-          </div>
+          <textarea
+            name="message"
+            placeholder="Your Message or Query"
+            rows="4"
+            value={formData.message}
+            onChange={handleChange}
+            className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+          ></textarea>
 
-          <div className="rounded-2xl border border-slate-100 bg-white/80 p-4 text-center shadow-sm">
-            <p className="text-sm font-semibold text-secondary">NCR Coverage</p>
-            <p className="text-xs text-slate-500">Expanding rapidly</p>
-          </div>
+          <button type="submit" className="w-full rounded-full bg-primary px-8 py-3 text-white font-semibold shadow-lg shadow-primary/40 transition hover:-translate-y-0.5">
+            Notify Me
+          </button>
+        </form>
 
-          <div className="rounded-2xl border border-slate-100 bg-white/80 p-4 text-center shadow-sm">
-            <p className="text-sm font-semibold text-secondary">Dedicated Support</p>
-            <p className="text-xs text-slate-500">Always here for you</p>
-          </div>
-        </div>
-      </MotionDiv>
-    </div>
-  </section>
-);
+        {status && <div className="mt-4 text-sm text-secondary">{status}</div>}
+      </div>
+    </section>
+  );
+};
 
 export default Hero;
