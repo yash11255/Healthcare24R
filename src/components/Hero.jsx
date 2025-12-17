@@ -53,9 +53,10 @@ const Hero = () => {
           <input
             name="phone"
             type="tel"
-            placeholder="Phone Number (optional)"
+            placeholder="Phone Number"
             value={formData.phone}
             onChange={handleChange}
+            required
             className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
           />
 
