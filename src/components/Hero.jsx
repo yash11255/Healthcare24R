@@ -28,6 +28,9 @@ const Hero = () => (
         <h1 className="font-heading text-4xl font-semibold text-secondary sm:text-5xl">
           Healthcare at Home, Right When You Need It
         </h1>
+        <div className="w-full text-center py-2">
+          <span className="text-xl font-bold text-primary">Happy New Year!</span>
+        </div>
 
         <p className="text-lg text-slate-600">
           HealthCare24Hr delivers professional caregivers, nurses, and medical services to your doorstep. 
