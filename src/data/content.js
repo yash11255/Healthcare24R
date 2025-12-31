@@ -219,7 +219,7 @@ export const specialties = [
   "Cancer Care",
   "Diabetes Management",
   "Palliative Care",
-  "Baby Care",
+  // Baby Care removed
 ];
 
 export const faqs = [

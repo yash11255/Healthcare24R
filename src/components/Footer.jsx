@@ -33,7 +33,7 @@ const Footer = () => (
           Contact
         </h4>
         <ul className="mt-4 space-y-2 text-sm text-white/70">
-          <li>+91 080-6904-8802</li>
+          {/* Phone number removed */}
           <li>support@HealthCare24Hr.co.in</li>
           <li>Delhi NCR</li>
         </ul>

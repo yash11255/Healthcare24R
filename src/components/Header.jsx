@@ -26,8 +26,7 @@ const Header = () => {
           </div>
           <div className="flex flex-wrap items-center gap-4">
             <a className="inline-flex items-center gap-2" href="tel:+918069048802">
-              <i className="fas fa-phone text-primary" />
-              Call Us · +91 080-6904-8802
+              {/* Phone icon and Call Us removed */}
             </a>
             <div className="flex items-center gap-2 text-white">
               {["facebook-f", "linkedin-in", "youtube", "twitter"].map((icon) => (

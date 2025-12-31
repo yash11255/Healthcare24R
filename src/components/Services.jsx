@@ -39,18 +39,7 @@ const servicesData = {
     icon: "/assets/images/service/14.svg",
     image: "https://blog.healtether.com/wp-content/uploads/al_opt_content/IMAGE/blog.healtether.com/wp-content/uploads/2024/12/physiotherapy-center-in-india.jpg.bv_resized_ipad.jpg.bv.webp?bv_host=blog.healtether.com"
   },
-  babyCare: {
-    title: "Experienced Baby Sitter and Nanny",
-    description: "HealthCare24Hr has caring and experienced baby sitters who are experts in taking care of Baby.",
-    features: [
-      "Bathing and dressing",
-      "Children's laundry",
-      "Changing diapers and potty-training*",
-      "Organizing bedrooms/toys"
-    ],
-    icon: "/assets/images/service/12.svg",
-    image: "https://hilfenursingservices.com/wp-content/uploads/2023/10/2-1024x1024.png"
-  }
+  // babyCare removed
 };
 
 const Services = () => {
@@ -73,7 +62,7 @@ const Services = () => {
             { key: "caregiver", label: "Caregiver" },
             { key: "nurse", label: "Nurse" },
             { key: "physiotherapy", label: "Physiotherapy" },
-            { key: "babyCare", label: "Baby Care" }
+            // Baby Care tab removed
           ].map((tab) => (
             <button
               key={tab.key}
@@ -123,8 +112,7 @@ const Services = () => {
                 <i className="fa-solid fa-arrow-right" />
               </Link>
               <button className="inline-flex items-center gap-2 rounded-full border border-secondary/20 px-8 py-3 text-sm font-semibold text-secondary transition hover:border-primary hover:text-primary">
-                <i className="fas fa-phone" />
-                Call Us
+                {/* Phone icon and Call Us removed */}
               </button>
             </div>
           </div>
