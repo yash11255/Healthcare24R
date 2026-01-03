@@ -5,6 +5,7 @@ export const navLinks = [
   // { label: "Doctors", to: "/doctors" },
   { label: "Blog", to: "/blog" },
   { label: "Contact", to: "/contact" },
+  { label: "Careers", to: "/careers" },
 ];
 
 export const quickActions = [
