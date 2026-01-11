@@ -34,7 +34,7 @@ const Footer = () => (
         </h4>
         <ul className="mt-4 space-y-2 text-sm text-white/70">
           {/* Phone number removed */}
-          <li>support@HealthCare24Hr.co.in</li>
+          <li>support@HealthCare24Hr.in</li>
           <li>Delhi NCR</li>
         </ul>
       </div>

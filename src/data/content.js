@@ -1,8 +1,34 @@
+// Health Equipment/Machines Listing
+export const healthEquipment = [
+  
+  // Add more equipment as needed
+  {
+    name: "Philips DreamStation BiPAP Pro",
+    image: "/Philips DreamStation BiPAP Pro.jpeg",
+    description: "Sleep Apnea & Snoring Device + DreamWear Under-the-Nose Nasal Mask with Medium Frame and Headgear. Online Demonstration & Installation available.",
+  },
+  {
+    name: "Oxy-Med SleepEasy AutoCPAP Machine",
+    image: "/Oxy-Med SleepEasy AutoCPAP Machine.jpeg",
+    description: "Limited-time deal: AutoCPAP Machine with Heated Humidifier and Mask. For Sleep Apnea, includes 3 years warranty.",
+  },
+  {
+    name: "GVS Oxygen 5L Oxy-Pure Ultra Silence Oxygen Concentrator",
+    image: "/GVS Oxygen 5L Oxy-Pure Ultra Silence Oxygen Concentrator.jpeg",
+    description: "Ultra Silence Oxygen Concentrator, 5L, Grey. Reliable and quiet for home use.",
+  },
+  {
+    name: "Bpl Homecare Oxygen Concentrators Oxy 5 Neo",
+    image: "/Bpl Homecare Oxygen Concentrators Oxy 5 Neo.jpeg",
+    description: "Limited-time deal: Bpl Homecare Oxygen Concentrators Oxy 5 Neo. Efficient and easy to use.",
+  },
+];
 export const navLinks = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
   // { label: "Doctors", to: "/doctors" },
+  { label: "Equipment", to: "/equipment" },
   { label: "Blog", to: "/blog" },
   { label: "Contact", to: "/contact" },
   { label: "Careers", to: "/careers" },
@@ -165,28 +191,24 @@ export const coreValues = [
 
 export const careTimeline = [
   {
-    decade: "2014",
-    title: "Foundation",
-    description:
-      "Started HealthCare24Hr to revolutionize home healthcare in Mumbai with verified caregivers.",
-  },
-  {
-    decade: "2017",
-    title: "Network expansion",
-    description:
-      "Expanded to Delhi-NCR and Bangalore, building India's largest caregiver network.",
-  },
-  {
     decade: "2020",
-    title: "Digital transformation",
-    description:
-      "Launched online booking platform and 24/7 support system for seamless care.",
+    title: "Foundation",
+    description: "HealthCare24Hr was founded to provide trusted home healthcare services with verified caregivers.",
   },
   {
-    decade: "2025",
-    title: "Pan-India presence",
-    description:
-      "Serving 10+ cities with 2000+ caregivers, setting new standards in home healthcare.",
+    decade: "2021",
+    title: "Network",
+    description: "Expanded our network to serve more families and regions, ensuring quality care everywhere.",
+  },
+  {
+    decade: "2024",
+    title: "Digital",
+    description: "Launched digital solutions for seamless online booking and 24/7 support.",
+  },
+  {
+    decade: "2026",
+    title: "Careers - Flexible Shifts",
+    description: "Flexible shifts: 8, 12, and 24 hours duty.\n\u0915\u0947\u0930\u093F\u092F\u0930\u094D\u0938 - \u0932\u093E\u091A\u0940\u0932 \u0936\u093F\u092B\u094D\u091F\u094D\u0938\uFF1A 8, 12 \u0914\u0930 24 \u0918\u0902\u091F\u0947 \u0915\u0940 \u0921\u094D\u092F\u0942\u091F\u0940\u0964",
   },
 ];
 

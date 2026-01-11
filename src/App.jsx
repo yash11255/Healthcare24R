@@ -9,7 +9,9 @@ import BlogPage from "./pages/Blog.jsx";
 import ContactPage from "./pages/Contact.jsx";
 import AppointmentPage from "./pages/Appointment.jsx";
 
+
 import CareersPage from "./pages/Careers.jsx";
+import EquipmentPage from "./pages/Equipment.jsx";
 
 const App = () => (
   <Routes>
@@ -23,6 +25,7 @@ const App = () => (
       <Route path="contact" element={<ContactPage />} />
       <Route path="appointment" element={<AppointmentPage />} />
       <Route path="careers" element={<CareersPage />} />
+      <Route path="equipment" element={<EquipmentPage />} />
     </Route>
   </Routes>
 );
