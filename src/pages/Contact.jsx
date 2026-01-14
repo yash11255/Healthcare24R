@@ -26,6 +26,19 @@ const ContactPage = () => (
             </div>
           ))}
         </div>
+        {/* Embedded Google Map */}
+        <div className="mt-12 flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3704.970239818596!2d77.23657607549829!3d28.563506975702484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMzJzQ4LjYiTiA3N8KwMTQnMjAuOSJF!5e1!3m2!1sen!2sin!4v1768110015176!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style={{ border: 0, borderRadius: '1.5rem', width: '100%', maxWidth: 600 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="HealthCare24Hr Location Map"
+          ></iframe>
+        </div>
       </div>
     </section>
     <section className="bg-alt py-16">

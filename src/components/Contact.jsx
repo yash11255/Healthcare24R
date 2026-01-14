@@ -4,8 +4,31 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // stop reload
-    setSubmitted(true); // fake success
+    e.preventDefault();
+    // Get form values
+    const form = e.target;
+    const name = form.elements[0].value;
+    const phone = form.elements[1].value;
+    const city = form.elements[2].value;
+    const requirements = form.elements[3].value;
+
+    // Format WhatsApp message
+    const message =
+      `*New Contact Request*\n` +
+      `-----------------------------\n` +
+      `*Name:* ${name}\n` +
+      `*Phone:* ${phone}\n` +
+      `*City:* ${city}\n` +
+      `*Requirements:* ${requirements}`;
+
+    // WhatsApp number (provided by user)
+    const whatsappNumber = "917678680052";
+    const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    // Open WhatsApp link in new tab
+    window.open(waUrl, "_blank");
+
+    setSubmitted(true);
   };
 
   return (

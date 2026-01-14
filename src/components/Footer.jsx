@@ -45,7 +45,17 @@ const Footer = () => (
         <p className="mt-4 text-sm text-white/70">
           Healthcare tips and service updates delivered monthly.
         </p>
-        <form className="mt-4 space-y-3">
+        <form className="mt-4 space-y-3" onSubmit={e => {
+          e.preventDefault();
+          const email = e.target.elements[0].value;
+          const message =
+            `*Newsletter Subscription*\n` +
+            `-----------------------------\n` +
+            `*Email:* ${email}`;
+          const whatsappNumber = "917678680052";
+          const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+          window.open(waUrl, "_blank");
+        }}>
           <input
             type="email"
             placeholder="Email address"

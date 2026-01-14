@@ -49,11 +49,27 @@ const Header = () => {
         </Link>
 
         <nav className="ml-auto hidden items-center gap-2 md:flex">
-          {navLinks.map((link) => (
-            <NavLink key={link.label} to={link.to} className={linkClasses} end={link.to === "/"} onClick={() => setMenuOpen(false)}>
-              {link.label}
-            </NavLink>
-          ))}
+          {navLinks.map((link) => {
+            if (link.label === "Contact") {
+              return (
+                <a
+                  key={link.label}
+                  href="https://wa.me/917678680052?text=Hello%20HealthCare24Hr%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={linkClasses({ isActive: false })}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              );
+            }
+            return (
+              <NavLink key={link.label} to={link.to} className={linkClasses} end={link.to === "/"} onClick={() => setMenuOpen(false)}>
+                {link.label}
+              </NavLink>
+            );
+          })}
         </nav>
 
         <Link
@@ -76,11 +92,27 @@ const Header = () => {
       {menuOpen && (
         <div className="border-t border-slate-100 bg-white px-4 py-4 md:hidden">
           <div className="flex flex-col gap-2">
-            {navLinks.map((link) => (
-              <NavLink key={link.label} to={link.to} className={linkClasses} onClick={() => setMenuOpen(false)} end={link.to === "/"}>
-                {link.label}
-              </NavLink>
-            ))}
+            {navLinks.map((link) => {
+              if (link.label === "Contact") {
+                return (
+                  <a
+                    key={link.label}
+                    href="https://wa.me/917678680052?text=Hello%20HealthCare24Hr%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={linkClasses({ isActive: false })}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                );
+              }
+              return (
+                <NavLink key={link.label} to={link.to} className={linkClasses} onClick={() => setMenuOpen(false)} end={link.to === "/"}>
+                  {link.label}
+                </NavLink>
+              );
+            })}
             <Link
               to="/appointment"
               onClick={() => setMenuOpen(false)}

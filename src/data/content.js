@@ -62,6 +62,21 @@ export const quickActions = [
 ];
 
 export const serviceLines = [
+    {
+      title: "Maid Services",
+      description: "Trained and background-verified maids for home cleaning, kitchen help, and daily chores.",
+      icon: "/assets/images/service/maid.svg",
+      slug: "maid",
+      longDescription:
+        "Professional maid services for daily cleaning, kitchen help, laundry, and more. All maids are background-verified and trained for hygiene and reliability.",
+      features: [
+        "Home cleaning and dusting",
+        "Utensil washing and kitchen help",
+        "Laundry and ironing",
+        "Flexible part-time/full-time shifts"
+      ],
+      image: "https://images.pexels.com/photos/4239038/pexels-photo-4239038.jpeg?auto=compress&w=400&h=300&fit=crop",
+    },
   {
     title: "Caregiver Services",
     description: "Trained and verified caregivers for elderly and patient care.",
@@ -264,9 +279,7 @@ export const faqs = [
 ];
 
 export const locations = [
-  { city: "Mumbai", address: "Andheri West, Mumbai, Maharashtra 400053" },
-  { city: "Delhi", address: "Connaught Place, New Delhi, Delhi 110001" },
-  { city: "Bangalore", address: "Koramangala, Bangalore, Karnataka 560034" },
+  // Locations removed as requested
 ];
 
 export const departments = [

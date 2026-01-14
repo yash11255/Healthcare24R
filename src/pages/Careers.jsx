@@ -21,27 +21,29 @@ const Careers = () => {
   // TODO: Replace with your actual Google Apps Script endpoint URL
   const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbydj-kUEa3DtYMa47f24EIARQ5KFUJk5tzg0zXLf-H6LASKNc7uz8H73SAoeA9cJzf9ow/exec";
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitting(true);
     setSuccess(null);
-    try {
-      const response = await fetch(GOOGLE_SCRIPT_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        setSuccess("Thank you! Your application has been received.");
-        setFormData({ fullName: "", phone: "", role: "", experience: "", location: "" });
-      } else {
-        setSuccess("There was an error submitting your application. Please try again.");
-      }
-    } catch (err) {
-      setSuccess("");
-    }
+    // Format WhatsApp message
+    const message =
+      `*New Career Application*\n` +
+      `-----------------------------\n` +
+      `*Full Name:* ${formData.fullName}\n` +
+      `*Phone:* ${formData.phone}\n` +
+      `*Role:* ${formData.role}\n` +
+      `*Experience:* ${formData.experience}\n` +
+      `*Location:* ${formData.location}`;
+
+    // WhatsApp number (provided by user)
+    const whatsappNumber = "917678680052";
+    const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    // Open WhatsApp link in new tab
+    window.open(waUrl, "_blank");
+
+    setSuccess("Thank you! Your application has been received.");
+    setFormData({ fullName: "", phone: "", role: "", experience: "", location: "" });
     setSubmitting(false);
   };
 

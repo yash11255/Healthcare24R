@@ -39,7 +39,18 @@ const servicesData = {
     icon: "/assets/images/service/14.svg",
     image: "https://blog.healtether.com/wp-content/uploads/al_opt_content/IMAGE/blog.healtether.com/wp-content/uploads/2024/12/physiotherapy-center-in-india.jpg.bv_resized_ipad.jpg.bv.webp?bv_host=blog.healtether.com"
   },
-  // babyCare removed
+  maid: {
+    title: "Book a Professional Maid",
+    description: "Trained and background-verified maids for home cleaning, kitchen help, and daily chores. Reliable, hygienic, and available for flexible shifts.",
+    features: [
+      "Daily home cleaning and dusting",
+      "Utensil washing and kitchen help",
+      "Laundry and clothes ironing",
+      "Flexible part-time/full-time shifts"
+    ],
+    icon: "/assets/images/service/maid.svg",
+    image: "https://images.pexels.com/photos/4239038/pexels-photo-4239038.jpeg?auto=compress&w=400&h=300&fit=crop"
+  },
 };
 
 const Services = () => {
@@ -62,7 +73,7 @@ const Services = () => {
             { key: "caregiver", label: "Caregiver" },
             { key: "nurse", label: "Nurse" },
             { key: "physiotherapy", label: "Physiotherapy" },
-            // Baby Care tab removed
+            { key: "maid", label: "Maid" },
           ].map((tab) => (
             <button
               key={tab.key}
