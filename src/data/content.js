@@ -38,27 +38,28 @@ export const quickActions = [
   {
     label: "Book Caregiver",
     icon: "/assets/images/service/01.svg",
-    to: "/appointment",
+    to: "/",
     pill: "2000+ caregivers",
   },
   {
     label: "Nursing Services",
     icon: "/assets/images/service/02.svg",
-    to: "/doctors",
+    to: "/",
     pill: "Certified nurses",
   },
   {
     label: "Emergency Call",
     icon: "/assets/images/service/03.svg",
-    to: "tel:+918069048802",
+    to: "/",
     pill: "24/7 support",
   },
   {
     label: "Physiotherapy",
     icon: "/assets/images/service/04.svg",
-    to: "/contact",
+    to: "/",
     pill: "At home",
   },
+
 ];
 
 export const serviceLines = [
