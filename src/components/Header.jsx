@@ -29,7 +29,7 @@ const Header = () => {
               {/* Phone icon and Call Us removed */}
             </a>
             <div className="flex items-center gap-2 text-white">
-              {["facebook-f", "linkedin-in", "youtube", "twitter"].map((icon) => (
+              {["facebook-f", "linkedin-in", "youtube", "twitter", "instagram"].map((icon) => (
                 <a
                   key={icon}
                   href="#"

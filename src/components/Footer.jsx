@@ -74,7 +74,7 @@ const Footer = () => (
     <div className="mt-10 flex justify-center">
       <iframe
         title="HealthCare24Hr Location"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.010282019994!2d77.2249603150826!3d28.61393998242139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2b3a2b1b1b1%3A0x1a1a1a1a1a1a1a1a!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3504.208302311737!2d77.23657607549829!3d28.563507075702432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMzJzQ4LjYiTiA3N8KwMTQnMjAuOSJF!5e0!3m2!1sen!2sin!4v1768651629618!5m2!1sen!2sin"
         width="350"
         height="200"
         style={{ border: 0, borderRadius: '1rem', boxShadow: '0 2px 16px rgba(0,0,0,0.12)' }}

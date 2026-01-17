@@ -122,9 +122,6 @@ const Services = () => {
                 Book Now
                 <i className="fa-solid fa-arrow-right" />
               </Link>
-              <button className="inline-flex items-center gap-2 rounded-full border border-secondary/20 px-8 py-3 text-sm font-semibold text-secondary transition hover:border-primary hover:text-primary">
-                {/* Phone icon and Call Us removed */}
-              </button>
             </div>
           </div>
 
