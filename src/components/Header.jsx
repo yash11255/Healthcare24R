@@ -29,13 +29,21 @@ const Header = () => {
               {/* Phone icon and Call Us removed */}
             </a>
             <div className="flex items-center gap-2 text-white">
-              {["facebook-f", "linkedin-in", "youtube", "twitter", "instagram"].map((icon) => (
+              {[
+                { icon: "facebook-f", url: "#" },
+                { icon: "linkedin-in", url: "#" },
+                { icon: "youtube", url: "#" },
+                { icon: "twitter", url: "https://x.com/healthcare24hrs" },
+                { icon: "instagram", url: "https://www.instagram.com/heal.thcare24hr" }
+              ].map((social) => (
                 <a
-                  key={icon}
-                  href="#"
+                  key={social.icon}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="grid h-8 w-8 place-items-center rounded-full border border-white/30 text-xs transition hover:bg-white hover:text-secondary"
                 >
-                  <i className={`fa-brands fa-${icon}`} />
+                  <i className={`fa-brands fa-${social.icon}`} />
                 </a>
               ))}
             </div>
