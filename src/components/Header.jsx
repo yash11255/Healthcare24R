@@ -33,7 +33,7 @@ const Header = () => {
                 { icon: "facebook-f", url: "#" },
                 { icon: "linkedin-in", url: "#" },
                 { icon: "youtube", url: "#" },
-                { icon: "twitter", url: "https://x.com/healthcare24hrs" },
+                { icon: "x-twitter", url: "https://x.com/healthcare24hrs" },
                 { icon: "instagram", url: "https://www.instagram.com/heal.thcare24hr" }
               ].map((social) => (
                 <a
