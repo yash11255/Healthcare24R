@@ -306,27 +306,7 @@ export const departments = [
   },
 ];
 
-export const packages = [
-  {
-    label: "Basic Care",
-    price: "₹1,200/day",
-    description: "8-hour caregiver service for daily assistance and support.",
-    perks: ["Verified caregiver", "Daily monitoring", "Personal care"],
-  },
-  {
-    label: "Premium Care",
-    price: "₹2,500/day",
-    description: "24-hour dedicated caregiver with complete care support.",
-    perks: ["24/7 caregiver", "Medical assistance", "Emergency support"],
-    featured: true,
-  },
-  {
-    label: "Nursing Care",
-    price: "Custom",
-    description: "Professional nursing services with medical care at home.",
-    perks: ["Certified nurse", "Medical procedures", "Health monitoring"],
-  },
-];
+// Membership plan packages removed
 
 export const doctors = [
   {

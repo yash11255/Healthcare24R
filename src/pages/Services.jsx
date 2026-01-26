@@ -1,24 +1,9 @@
 import ServicesSection from "../components/Services.jsx";
 import PageHero from "../components/PageHero.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
-import { departments, packages, faqs } from "../data/content.js";
+import { departments, faqs } from "../data/content.js";
 
-// Custom utility component for a visually appealing gradient border (used for the featured package)
-const GradientBorderCard = ({ children, className = "" }) => (
-  <div
-    // Wrapper provides the gradient border effect
-    className={`relative rounded-3xl p-px transition duration-300 shadow-2xl shadow-primary/20 hover:shadow-primary/30 ${className}`}
-    style={{
-      // Using a vibrant gradient for a premium feel
-      background: 'linear-gradient(145deg, var(--color-primary, #FF6B6B) 0%, var(--color-alt, #FFD97D) 100%)', 
-    }}
-  >
-    {/* Inner div for the main white content, ensuring no extra whitespace */}
-    <div className="bg-white rounded-[calc(1.5rem-1px)] h-full w-full p-8 flex flex-col">
-      {children}
-    </div>
-  </div>
-);
+// ...existing code...
 
 const ServicesPage = () => (
   <>
@@ -77,78 +62,7 @@ const ServicesPage = () => (
       </div>
     </section>
     
-    {/* 3. MEMBERSHIPS SECTION: Content optimized for "Predictive Wellness Plans" */}
-    <section className="bg-alt py-20 lg:py-32">
-      <div className="mx-auto max-w-7xl px-4">
-        <SectionHeading
-          eyebrow="Membership Plans"
-          // H2 Optimization: Target "Predictive Wellness," "Healthcare Bundles"
-          title="Predictable billing, premium access, zero complexity."
-          description="Choose the plan that fits your family's needs. We manage benefits, records, and personalized onboarding automatically. **Enroll in our predictive wellness plans today.**"
-          align="center"
-        />
-        {/* NOTE ON IMAGES: Insert an image showcasing the financial clarity or convenience of a health plan, featuring Indian currency or a family using the plan.
-        * <img src="path/to/indian-family-health-plan.jpg" alt="Affordable and predictive Indian health and wellness plans" className="mt-8 mx-auto w-1/2" />
-        */}
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
-          {packages.map((pkg) => {
-            const isFeatured = pkg.featured;
-            const Content = (
-              <>
-                <p
-                  className={`text-sm uppercase tracking-[0.25em] font-bold ${isFeatured ? 'text-primary' : 'text-secondary/70'}`}
-                >
-                  {pkg.label}
-                </p>
-                {isFeatured && (
-                  <span className="mt-2 inline-block rounded-full bg-primary/20 px-4 py-1 text-xs font-extrabold text-primary shadow-inner">
-                    BEST VALUE
-                  </span>
-                )}
-                <p className="mt-4 text-5xl font-black text-secondary">
-                  {pkg.price}
-                </p>
-                <p className="mt-2 text-sm text-slate-600">
-                  {pkg.description}
-                </p>
-                <ul className="mt-10 space-y-4 text-base text-secondary flex-grow">
-                  {pkg.perks.map((perk) => (
-                    <li key={perk} className="flex items-start gap-3">
-                      <span className={`inline-flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full ${isFeatured ? 'bg-primary text-white shadow-lg' : 'bg-primary/10 text-primary'}`}>
-                        <i className="fa-solid fa-check text-sm" />
-                      </span>
-                      {perk}
-                    </li>
-                  ))}
-                </ul>
-                <button className={`mt-12 w-full py-4 rounded-xl font-bold text-lg transition duration-300
-                  ${isFeatured
-                    ? 'bg-primary text-white shadow-2xl shadow-primary/40 hover:bg-primary/90'
-                    : 'bg-white border-2 border-primary text-primary hover:bg-primary/10'
-                  }`}
-                >
-                  Select Plan
-                </button>
-              </>
-            );
-            return isFeatured ? (
-              <div key={pkg.label} className="scale-[1.05] transform transition-transform duration-500">
-                <GradientBorderCard>
-                  {Content}
-                </GradientBorderCard>
-              </div>
-            ) : (
-              <div
-                key={pkg.label}
-                className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl transition duration-300 hover:shadow-2xl"
-              >
-                {Content}
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </section>
+    // ...existing code...
 
     
     {/* 4. FAQ SECTION: Content optimized for "Booking Questions" */}
@@ -158,7 +72,7 @@ const ServicesPage = () => (
           eyebrow="Essential Questions"
           // H2 Optimization: Target "Booking Questions," "Getting Started"
           title="Clarity before commitment."
-          description="Find answers to common questions about our services, membership plans, and how to get started with **India's leading integrated care provider**."
+          description="Find answers to common questions about our services and how to get started with **India's leading integrated care provider**."
           align="center"
         />
         
