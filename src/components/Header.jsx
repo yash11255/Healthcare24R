@@ -1,14 +1,10 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../data/content.js";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const linkClasses = ({ isActive }) =>
-    `rounded-full px-3 py-2 text-sm font-medium transition ${
-      isActive ? "text-primary bg-primary/10" : "text-secondary/80 hover:text-primary"
-    }`;
+  const linkClasses = "rounded-full px-3 py-2 text-sm font-medium transition text-secondary/80 hover:text-primary";
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-100 bg-white">
@@ -52,40 +48,30 @@ const Header = () => {
       </div>
 
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-4">
-        <Link to="/" className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3">
           <img src="/Screenshot 2025-12-04 at 11.50.25 PM.png" alt="HealthCare24Hr logo" className="h-12 w-auto" />
-        </Link>
+        </a>
 
         <nav className="ml-auto hidden items-center gap-2 md:flex">
           {navLinks.map((link) => {
-            if (link.label === "Contact") {
-              return (
-                <a
-                  key={link.label}
-                  href="https://wa.me/917678680052?text=Hello%20HealthCare24Hr%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={linkClasses({ isActive: false })}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
-              );
-            }
+            const href =
+              link.label === "Contact"
+                ? "https://wa.me/917678680052?text=Hello%20HealthCare24Hr%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                : link.to;
             return (
-              <NavLink key={link.label} to={link.to} className={linkClasses} end={link.to === "/"} onClick={() => setMenuOpen(false)}>
+              <a key={link.label} href={href} className={linkClasses} onClick={() => setMenuOpen(false)}>
                 {link.label}
-              </NavLink>
+              </a>
             );
           })}
         </nav>
 
-        <Link
-          to="/appointment"
+        <a
+          href="/appointment"
           className="hidden rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition hover:-translate-y-0.5 md:inline-flex"
         >
           Book Service
-        </Link>
+        </a>
 
         <button
           type="button"
@@ -101,33 +87,23 @@ const Header = () => {
         <div className="border-t border-slate-100 bg-white px-4 py-4 md:hidden">
           <div className="flex flex-col gap-2">
             {navLinks.map((link) => {
-              if (link.label === "Contact") {
-                return (
-                  <a
-                    key={link.label}
-                    href="https://wa.me/917678680052?text=Hello%20HealthCare24Hr%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={linkClasses({ isActive: false })}
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {link.label}
-                  </a>
-                );
-              }
+              const href =
+                link.label === "Contact"
+                  ? "https://wa.me/917678680052?text=Hello%20HealthCare24Hr%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                  : link.to;
               return (
-                <NavLink key={link.label} to={link.to} className={linkClasses} onClick={() => setMenuOpen(false)} end={link.to === "/"}>
+                <a key={link.label} href={href} className={linkClasses} onClick={() => setMenuOpen(false)}>
                   {link.label}
-                </NavLink>
+                </a>
               );
             })}
-            <Link
-              to="/appointment"
+            <a
+              href="/appointment"
               onClick={() => setMenuOpen(false)}
               className="rounded-full bg-primary px-4 py-2 text-center text-sm font-semibold text-white"
             >
               Appointment
-            </Link>
+            </a>
           </div>
         </div>
       )}

@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const PageHero = ({
   eyebrow,
   title,
@@ -26,20 +24,20 @@ const PageHero = ({
       )}
       <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
         {primaryAction && (
-          <Link
-            to={primaryAction.to}
+          <a
+            href={primaryAction.to}
             className="rounded-full bg-secondary px-8 py-3 text-sm font-semibold text-white shadow-xl shadow-secondary/30 transition hover:-translate-y-0.5"
           >
             {primaryAction.label}
-          </Link>
+          </a>
         )}
         {secondaryAction && (
-          <Link
-            to={secondaryAction.to}
+          <a
+            href={secondaryAction.to}
             className="rounded-full border border-secondary/30 px-8 py-3 text-sm font-semibold text-secondary transition hover:border-primary hover:text-primary"
           >
             {secondaryAction.label}
-          </Link>
+          </a>
         )}
       </div>
     </div>

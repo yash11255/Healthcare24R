@@ -1,4 +1,4 @@
-import { Navigate, useParams, Link } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import PageHero from "../components/PageHero.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import EOIForm from "../components/EOIForm.jsx";
@@ -75,14 +75,14 @@ const ServiceDetails = () => {
               </p>
               <div className="mt-4 space-y-4">
                 {relatedServices.map((item) => (
-                  <Link
+                  <a
                     key={item.slug}
-                    to={`/services/${item.slug}`}
+                    href={`/services/${item.slug}`}
                     className="flex items-center justify-between rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-secondary transition hover:-translate-y-0.5 hover:text-primary"
                   >
                     {item.title}
                     <i className="fas fa-arrow-right" />
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>

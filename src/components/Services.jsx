@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import SectionHeading from "./SectionHeading.jsx";
 
 const servicesData = {
@@ -115,13 +114,13 @@ const Services = () => {
             </ul>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              <Link
-                to="/appointment"
+              <a
+                href="/appointment"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition hover:-translate-y-0.5"
               >
                 Book Now
                 <i className="fa-solid fa-arrow-right" />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -139,13 +138,13 @@ const Services = () => {
               <p className="mt-2 text-xl font-semibold text-secondary">
                 Professional Home Healthcare
               </p>
-              <Link
-                to="/appointment"
+              <a
+                href="/appointment"
                 className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition hover:-translate-y-0.5"
               >
                 Book Service Now
                 <i className="fa-solid fa-arrow-right" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

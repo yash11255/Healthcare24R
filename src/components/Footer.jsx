@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const Footer = () => (
   <footer className="bg-slate-950 text-white">
     <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 sm:grid-cols-2 lg:grid-cols-4">
@@ -21,9 +19,9 @@ const Footer = () => (
             { label: "Blog", to: "/blog" },
           ].map((item) => (
             <li key={item.label}>
-              <Link to={item.to} className="hover:text-white">
+              <a href={item.to} className="hover:text-white">
                 {item.label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
@@ -34,7 +32,7 @@ const Footer = () => (
         </h4>
         <ul className="mt-4 space-y-2 text-sm text-white/70">
           {/* Phone number removed */}
-          <li>support@HealthCare24Hr.in</li>
+          <a href="mailto:support@HealthCare24Hr.com">support@HealthCare24Hr.com</a>
           <li>Delhi NCR</li>
         </ul>
       </div>
