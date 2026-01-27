@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { navLinks } from "../data/content.js";
+import LanguageSwitcher from "./LanguageSwitcher.jsx";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,9 +22,6 @@ const Header = () => {
             </span>
           </div>
           <div className="flex flex-wrap items-center gap-4">
-            <a className="inline-flex items-center gap-2" href="tel:+918069048802">
-              {/* Phone icon and Call Us removed */}
-            </a>
             <div className="flex items-center gap-2 text-white">
               {[
                 { icon: "facebook-f", url: "#" },
@@ -47,7 +45,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-4">
+      <div className="mx-auto flex justify-between max-w-6xl items-center gap-4 px-4 py-4">
         <a href="/" className="flex items-center gap-3">
           <img src="/Screenshot 2025-12-04 at 11.50.25 PM.png" alt="HealthCare24Hr logo" className="h-12 w-auto" />
         </a>
@@ -65,6 +63,18 @@ const Header = () => {
             );
           })}
         </nav>
+          <div className="flex gap-2">
+
+        <LanguageSwitcher className="border-slate-200 bg-white text-secondary" />
+        <button
+          type="button"
+          className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-secondary md:hidden"
+          onClick={() => setMenuOpen((prev) => !prev)}
+          aria-label="Toggle navigation"
+          >
+          <i className="fas fa-bars text-lg" />
+        </button>
+          </div>
 
         <a
           href="/appointment"
@@ -73,14 +83,6 @@ const Header = () => {
           Book Service
         </a>
 
-        <button
-          type="button"
-          className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-secondary md:hidden"
-          onClick={() => setMenuOpen((prev) => !prev)}
-          aria-label="Toggle navigation"
-        >
-          <i className="fas fa-bars text-lg" />
-        </button>
       </div>
 
       {menuOpen && (

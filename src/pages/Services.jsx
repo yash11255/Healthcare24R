@@ -3,8 +3,6 @@ import PageHero from "../components/PageHero.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import { departments, faqs } from "../data/content.js";
 
-// ...existing code...
-
 const ServicesPage = () => (
   <>
     {/* 1. PAGE HERO: Optimized for primary keywords */}
@@ -62,11 +60,8 @@ const ServicesPage = () => (
       </div>
     </section>
     
-    // ...existing code...
-
-    
     {/* 4. FAQ SECTION: Content optimized for "Booking Questions" */}
-    <section className="bg-white py-20 lg:py-32">
+    {/* <section className="bg-white py-20 lg:py-32">
       <div className="mx-auto max-w-5xl"> 
         <SectionHeading
           eyebrow="Essential Questions"
@@ -95,7 +90,7 @@ const ServicesPage = () => (
           ))}
         </div>
       </div>
-    </section>
+    </section> */}
   </>
 );
 

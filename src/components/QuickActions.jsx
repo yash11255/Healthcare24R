@@ -5,10 +5,9 @@ const QuickActions = () => (
     <div className="mx-auto max-w-6xl px-4">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {quickActions.map((action) => (
-          <a
+          <div
             key={action.label}
-            href={action.to}
-            className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl"
+            className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition"
           >
             <div className="mb-4 flex items-center gap-3">
               <div className="h-14 w-14 rounded-2xl bg-alt p-3">
@@ -20,10 +19,10 @@ const QuickActions = () => (
                 </span>
               )}
             </div>
-            <h3 className="text-lg font-semibold text-secondary group-hover:text-primary">
+            <h3 className="text-lg font-semibold text-secondary">
               {action.label}
             </h3>
-          </a>
+          </div>
         ))}
       </div>
     </div>
@@ -31,4 +30,3 @@ const QuickActions = () => (
 );
 
 export default QuickActions;
-

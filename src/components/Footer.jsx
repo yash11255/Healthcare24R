@@ -31,8 +31,16 @@ const Footer = () => (
           Contact
         </h4>
         <ul className="mt-4 space-y-2 text-sm text-white/70">
-          {/* Phone number removed */}
-          <a href="mailto:support@HealthCare24Hr.com">support@HealthCare24Hr.com</a>
+          <li>
+            <a href="tel:+917678680052" className="hover:text-white">
+              +91 76786 80052
+            </a>
+          </li>
+          <li>
+            <a href="mailto:support@HealthCare24Hr.com" className="hover:text-white">
+              support@HealthCare24Hr.com
+            </a>
+          </li>
           <li>Delhi NCR</li>
         </ul>
       </div>

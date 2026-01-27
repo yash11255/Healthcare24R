@@ -38,7 +38,7 @@ const About = () => (
         </div>
         <div className="flex flex-wrap gap-4">
           <a
-            href="#contact"
+            href="/appointment"
             className="rounded-full bg-primary px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition hover:-translate-y-0.5"
           >
             Book Service Now

@@ -47,7 +47,7 @@ const servicesData = {
       "Laundry and clothes ironing",
       "Flexible part-time/full-time shifts"
     ],
-    icon: "/assets/images/service/maid.svg",
+    icon: "/assets/images/service/26.svg",
     image: "https://images.pexels.com/photos/4239038/pexels-photo-4239038.jpeg?auto=compress&w=400&h=300&fit=crop"
   },
 };
