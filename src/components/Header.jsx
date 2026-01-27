@@ -20,6 +20,10 @@ const Header = () => {
               <i className="fas fa-clock text-primary" />
               Available 24/7
             </span>
+            <a href="tel:+917678680052" className="inline-flex items-center gap-2 hover:text-primary transition">
+              <i className="fas fa-phone text-primary" />
+              +91 76786 80052
+            </a>
           </div>
           <div className="flex flex-wrap items-center gap-4">
             <div className="flex items-center gap-2 text-white">
