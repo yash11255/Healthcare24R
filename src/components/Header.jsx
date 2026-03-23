@@ -5,36 +5,26 @@ import LanguageSwitcher from "./LanguageSwitcher.jsx";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const linkClasses =
-    "rounded-full px-3 py-2 text-sm font-medium transition text-secondary/80 hover:text-primary";
+  const linkClasses = "rounded-full px-3 py-2 text-sm font-medium transition text-secondary/80 hover:text-primary";
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-100 bg-white">
-      
-      {/* Top Bar */}
       <div className="bg-secondary text-white text-xs sm:text-sm">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-between">
-          
           <div className="flex flex-wrap items-center gap-4">
             <span className="inline-flex items-center gap-2">
               <i className="fas fa-map-marker-alt text-primary" />
-              Delhi | NCR
+               Delhi | NCR
             </span>
-
             <span className="inline-flex items-center gap-2">
               <i className="fas fa-clock text-primary" />
               Available 24/7
             </span>
-
-            <a
-              href="tel:+917678680052"
-              className="inline-flex items-center gap-2 hover:text-primary transition"
-            >
+            <a href="tel:+917678680052" className="inline-flex items-center gap-2 hover:text-primary transition">
               <i className="fas fa-phone text-primary" />
               +91 76786 80052
             </a>
           </div>
-
           <div className="flex flex-wrap items-center gap-4">
             <div className="flex items-center gap-2 text-white">
               {[
@@ -56,65 +46,49 @@ const Header = () => {
               ))}
             </div>
           </div>
-
         </div>
       </div>
 
-      {/* Main Header */}
       <div className="mx-auto flex justify-between max-w-6xl items-center gap-4 px-4 py-4">
-        
         <a href="/" className="flex items-center gap-3">
-          <img
-            src="/Screenshot 2025-12-04 at 11.50.25 PM.png"
-            alt="HealthCare24Hr logo"
-            className="h-12 w-auto"
-          />
+          <img src="/Screenshot 2025-12-04 at 11.50.25 PM.png" alt="HealthCare24Hr logo" className="h-12 w-auto" />
         </a>
 
-        {/* Desktop Nav */}
         <nav className="ml-auto hidden items-center gap-2 md:flex">
           {navLinks.map((link) => {
             const href =
               link.label === "Contact"
                 ? "https://wa.me/917678680052?text=Hello%20HealthCare24Hr%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
                 : link.to;
-
             return (
-              <a
-                key={link.label}
-                href={href}
-                className={linkClasses}
-                onClick={() => setMenuOpen(false)}
-              >
+              <a key={link.label} href={href} className={linkClasses} onClick={() => setMenuOpen(false)}>
                 {link.label}
               </a>
             );
           })}
         </nav>
+          <div className="flex gap-2">
 
-        <div className="flex gap-2">
-          <LanguageSwitcher className="border-slate-200 bg-white text-secondary" />
-
-          {/* Mobile Menu Button */}
-          <button
-            type="button"
-            className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-secondary md:hidden"
-            onClick={() => setMenuOpen((prev) => !prev)}
+        <LanguageSwitcher className="border-slate-200 bg-white text-secondary" />
+        <button
+          type="button"
+          className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-secondary md:hidden"
+          onClick={() => setMenuOpen((prev) => !prev)}
+          aria-label="Toggle navigation"
           >
-            <i className="fas fa-bars text-lg" />
-          </button>
-        </div>
+          <i className="fas fa-bars text-lg" />
+        </button>
+          </div>
 
-        {/* CTA */}
         <a
           href="/appointment"
           className="hidden rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition hover:-translate-y-0.5 md:inline-flex"
         >
           Book Service
         </a>
+
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="border-t border-slate-100 bg-white px-4 py-4 md:hidden">
           <div className="flex flex-col gap-2">
@@ -123,19 +97,12 @@ const Header = () => {
                 link.label === "Contact"
                   ? "https://wa.me/917678680052?text=Hello%20HealthCare24Hr%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
                   : link.to;
-
               return (
-                <a
-                  key={link.label}
-                  href={href}
-                  className={linkClasses}
-                  onClick={() => setMenuOpen(false)}
-                >
+                <a key={link.label} href={href} className={linkClasses} onClick={() => setMenuOpen(false)}>
                   {link.label}
                 </a>
               );
             })}
-
             <a
               href="/appointment"
               onClick={() => setMenuOpen(false)}
@@ -151,3 +118,5 @@ const Header = () => {
 };
 
 export default Header;
+
+chsngr name carrer to job
