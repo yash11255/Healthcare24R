@@ -27,7 +27,7 @@ const Careers = () => {
     setSuccess(null);
     // Format WhatsApp message
     const message =
-      `*New Career Application*\n` +
+      `*New job Application*\n` +
       `-----------------------------\n` +
       `*Full Name:* ${formData.fullName}\n` +
       `*Phone:* ${formData.phone}\n` +
@@ -53,7 +53,7 @@ const Careers = () => {
       <header className="bg-blue-800 text-white py-16 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Join Our Care Team</h1>
         <p className="text-xl max-w-2xl mx-auto opacity-90">
-          Build a meaningful career in home healthcare with respect and stability.
+          Build a meaningful Job in home healthcare with respect and stability.
           <br />
           <span className="text-blue-200">होम हेल्थकेयर में सम्मानजनक करियर की शुरुआत करें।</span>
         </p>
