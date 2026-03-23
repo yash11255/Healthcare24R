@@ -31,7 +31,7 @@ export const navLinks = [
   { label: "Equipment", to: "/equipment" },
   { label: "Blog", to: "/blog" },
   { label: "Contact", to: "/contact" },
-  { label: "Careers", to: "/careers" },
+  { label: "Jobs", to: "/careers" },
 ];
 
 export const quickActions = [
